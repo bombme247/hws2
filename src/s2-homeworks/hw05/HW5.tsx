@@ -15,7 +15,7 @@ yarn add @types/react-router-dom
 * 2 - в файле Sidebar.tsx дописать className так чтоб вешался класс s.active когда мы уже на соответствующей странице
 * 3 - застилизовать хэдэр и сайдбар в соответствии с дизайном
 * */
-
+    
 function HW5() {
     return (
         <HashRouter>
