@@ -22,15 +22,21 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         //         ? ...
         //         : xType === 'red'
         //             ? ...
-        + (disabled
-                ? '' + s.disabled
-                : xType === 'red'
-                    ? '' + s.red 
-                    : xType === 'secondary' 
-                            ? '' + s.secondary
-                            : '' + s.default)
+      + (disabled ? ' ' + s.disabled: '') 
+      + (xType === 'red' ? ' ' + s.red : '')
+      + (xType === 'secondary' ? ' ' + s.secondary : '')
+      + (xType === 'default' ? ' ' + s.default : '')
+        // -------
+
+        // + (disabled
+        //         ? '' + s.disabled
+        //         : xType === 'red'
+        //             ? '' + s.red 
+        //             : xType === 'secondary' 
+        //                     ? '' + s.secondary
+        //                     : '' + s.default)
    
-        + (className ? ' ' + className : '') // задачка на смешивание классов
+        // + (className ? ' ' + className : '') // задачка на смешивание классов
 
     //ИЛИ ЕСЛИ НЕ ПОНЯТНО С finalClassName  ТОЖЕ САМОЕ ПРИ ПОМОЩИ ШАБЛОННЫХ СТРОК:
     // `${s.СТИЛЬ КНОПКИ}  ${xType==='КРАСНЫЙ' ? ДАВАЙ КРАСНЫЙ СТИЛЬ : xType === 'secondary' ? ДАВАЙ СЕКОНДАРИ СТИЛЬ: ДАВАЙ ПО ДЕФОЛТУ } ${disabled ? ДАВАЙ ДИЗАБЛЕТ СТИЛЬ :  ПУСТУЮ СТРОКУ} `

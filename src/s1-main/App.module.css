@@ -1,10 +1,15 @@
 .App {
     --header_height: 60px;
+    width: 100%;
+    padding: 0;
 }
 
 .hw {
-    width: 89.06%;
-    padding: 0 70px;
+    /* width: 89.06%; */
+    width: 100%;
+    padding: 90px 70px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    min-height: 372px;
 }
 
 .hwTitle {
@@ -15,4 +20,7 @@
     line-height: 27px;
     letter-spacing: 0%;
     text-align: left;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding-top: 36px;
+    padding-left: 70px;
 }
